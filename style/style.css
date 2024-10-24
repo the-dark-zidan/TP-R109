@@ -3,7 +3,7 @@
    
    
 --colorParagraph:#e5e5e5; 
-body {
+body{
 
     background-color: #041821;
 }
@@ -13,6 +13,7 @@ h1 {
 
 h2 {
 color:#ffffff ;
+font-family: "Yeseva One";
 }
 button{
     color:#ffffff ;
@@ -20,9 +21,21 @@ button{
 i {
     color:#ffffff ;
 }
-span{
-    color:#1bd79e ;
+
+span
+
+button span{
+    padding: 5px;
+    background-color:#1bd79e ;
+
 }
+
+button span{
+    padding: 5px;
+    background-color:#1bd79e ;
+
+}
+
 
 }
 
@@ -31,7 +44,7 @@ span{
 }   
   
 
-/* Header */
+
 header {
     border-bottom: 1px solid var(--colorParagraph);
     padding: 1.5em 0;
@@ -79,17 +92,16 @@ main {
     margin-bottom: 2em;
 }
 .category-button {
-    background-color: var(--backgroundDark);
+    background-color: #041821;
     color: var(--textColor);
+    cursor: pointer;
     border: none;
     letter-spacing: 0.25em;
     font-weight: lighter;
     font-size: 0.75em;
     padding: 0.5em;
 }
-#nature-button {
-    background-color: var(--primary);
-}
+
 /* Galerie */
 .grid {
     display: grid;
