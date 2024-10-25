@@ -1,8 +1,8 @@
 
 :root { 
---colorParagraph:#e5e5e5; /* Couleur des paragraphes */
-body{
 
+body{
+--colorParagraph:#e5e5e5; /* Couleur des paragraphes */
     background-color: #041821; /* Couleur de fond du corps de la page */
 }
 h1 {
@@ -12,7 +12,7 @@ h1 {
 
 h2 {
 color:#ffffff ;/* Couleur du texte pour les h2 */
-font-family: "Yeseva One";/* Police spécifique pour les h2 */
+font-family: "Yeseva One";/* Police de h2 */
 }
 
 p {
@@ -26,7 +26,7 @@ i {
     color:#ffffff ;/* Couleur du texte pour les éléments <i> */
 }
 span {
-color: #1bd79e;/* Couleur pour les éléments <span> */
+color: #1bd79e;/* Couleur pour l'élément <span> */
 }
 
 button span{
@@ -40,11 +40,10 @@ footer p {
 }
 
 button span{/* Espacement intérieur du texte dans le bouton */
-    padding: 5px;
+    padding: 5px; /* Espacement vertical de l'en-tête */
     background-color:#1bd79e ;
 
 }
-
 
 }
 
@@ -52,127 +51,121 @@ button span{/* Espacement intérieur du texte dans le bouton */
     margin: 0;
 }   
   
-
-
 header {
-    border-bottom: 1px solid #808080 ; /* sert a traçer le premier paragraphe*/
-    padding: 1.5em 0;
+    border-bottom: 1px solid #808080 ; /* Traçage de la bordure en bas de l'en-tête */
+    padding: 1.5em 0;/* Espacement de l'en-tête */
 }
 .h1 {
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-    color:#ffffff;
-    font-size: 3;
-    font-weight: lighter;
+    font-family: 'Yeseva One', cursive; /* Police d'écriture */
+    text-align: center;/* Centrage du texte */
+    color:#ffffff;/* Couleur du texte */
+    font-size: 3;/* Taille de la police */
+    font-weight: lighter;/* Poids de la police léger */
 }
 
 header nav a {
-    text-align: center;
-    margin: 1em 0.5em;
-}
-.reseau-nav a {
-    color: var(--textColor);
+    text-align: center;/* Centrage du texte dans les liens de navigation */
+    margin: 1em 0.5em;/* Espacement autour des liens du web */
 }
 
 main {
-    width: auto;
-    margin: auto;
-    padding-top: 3em;
+    width: auto;/* Largeur automatique pour le conteneur main */
+    margin: auto;/* Centrage du conteneur main */
+    padding-top: 3em;/* Espacement en haut */
 }
 .intro-heading {
-    font-family: 'Yeseva One', cursive;
-    font-size: 2em;
+    font-family: 'Yeseva One', cursive;/* Police Yeseva One */
+    font-size: 2em;/* Taille de la police pour l'en-tête d'introduction */
 }
 .paragraph {
-    font-weight: lighter;
-    margin: 2em 0;
+    font-weight: lighter;/* Poids léger pour les paragraphes */
+    margin: 2em 0;/* Marges autour des paragraphes */
 }
 .category-nav {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
+    justify-content: space-between; /* Espacement entre les éléments */
+    margin-bottom: 2em;/* Marges inférieure */
 }
 .category-button {
-    background-color: #041821;
-    color: var(--textColor);
+    background-color: #041821; /* Couleur de fond des boutons de catégorie */
     cursor: pointer;
-    border: none;
-    letter-spacing: 0.25em;
-    font-weight: lighter;
+    border: none;/* Suppression des bordures par défaut */
+    letter-spacing: 0.25em;/* Espacement entre les lettres */
+    font-weight: lighter;/* Poids léger pour le texte */
     font-size: 0.75em;
     padding: 0.5em;
 }
-
-/* Galerie */
+/* photos */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.5em;
+    display: grid;/* Utilisation de Grid pour les photos */
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes de largeur de même taille */
+    grid-gap: 0.5em;/* Espacement entre les éléments de la grille */
 }
 .grid img {
-    width: 100%;;
-    object-fit: cover;
+    width: 100%;;/* Images à 100% de la largeur du conteneur */
+    object-fit: cover;/* Ajustement des images */
 }
 .grid img:nth-child(n + 10) {
     display: none;
 }
 /* Footer */
 footer {
-    text-align: center;
-    margin-top: 4em;
+    text-align: center;/* Centrage du texte dans le footer */
+    margin-top: 4em;/* Marges en haut */
     color: var(--secondary);
-    font-weight: 100;
-    opacity: 0.5;
+    font-weight: 100;/* Poids de la police */
+    opacity: 0.5;/* Transparence */
 }
 footer p {
-    margin-bottom: 1em;
-    font-size: 0.75em;
+    margin-bottom: 1em;/* Espacement dans footer */
+    font-size: 0.75em;/* Taille de la police pour les paragraphes */
 }
 footer p:last-child {
-    font-size: 0.625em;
+    font-size: 0.620em; 
 }
-/* Media queries */ 
+
 @media screen and (min-width: 1024px) {
     .intro-heading,
     .intro-paragraph {
-        width: 50%;
+        width: 50%;/* Largeur de 50% pour l'en-tête et le paragraphe d'introduction */
     }
-    .category-button {
+    .category-button { /* Taille de police les boutons de catégorie */
         font-size: 1em;
     }
     .grid {
         grid-template-columns: repeat(5, 1fr);
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 740px) {
     header {
+        justify-content: center; /* Centrage du contenu de l'en-tête */
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center; /* Alignement au centre */
         padding: 1em;
     }
     main {
-        width: 80%;
-        margin: auto;
+        width: 80%;/* Largeur du conteneur principal à 80% */
+        margin: auto;/* centrage automatique */
     }
     .intro-heading {
-        font-size: 3em;
+        font-size: 3em;/* Augmentation de la taille de la police de l'en-tête d'introduction */
     }
     .category-nav {
         background-color: ;
-        justify-content: center;
-        gap: 1em;
+        justify-content: center;/* Centrage des éléments du web des catégories */
+        gap: 1em;/* Espacement entre les éléments */
     }
     .category-button {
         font-size: 0.80em;
     }
     .grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);/* Quatre colonnes sur les écrans moyens */
     }
     .grid img:nth-child(n + 10) {
         display: block;
     }
     .intro-paragraph {
-        width: 85%;
+        width: 90%;/* Largeur de 90% pour le paragraphe d'introduction */
     }
 }
