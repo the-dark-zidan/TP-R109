@@ -146,10 +146,12 @@ footer p:last-child {
     }
     main {
         width: 80%;/* Largeur du conteneur principal à 80% */
-        margin: auto;/* centrage automatique */
+        
     }
+
     .intro-heading {
-        font-size: 3em;/* Augmentation de la taille de la police de l'en-tête d'introduction */
+        font-size: 2em; /* Augmentation de la taille de la police de l'en-tête d'introduction */
+
     }
     .category-nav {
         background-color: ;
@@ -157,7 +159,7 @@ footer p:last-child {
         gap: 1em;/* Espacement entre les éléments */
     }
     .category-button {
-        font-size: 0.80em;
+        font-size: 1em;
     }
     .grid {
         grid-template-columns: repeat(4, 1fr);/* Quatre colonnes sur les écrans moyens */
