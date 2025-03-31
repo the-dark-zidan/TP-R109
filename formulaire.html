@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style/style2.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulaire de contact</h2>
+        <form action="#" method="post">
+            <input type="text" id="pseudo" name="pseudo" placeholder="Votre Pseudo *" required>
+            
+            <input type="password" id="password" name="password" placeholder="Votre Mot de passe *" required>
+            
+            <input type="email" id="email" name="email" placeholder="Votre e-mail *" required>
+            
+            <select id="objet" name="objet" required>
+                <option value="question">J’ai une question</option>
+                <option value="suggestion">Je fais une suggestion</option>
+                <option value="probleme">Je rencontre un problème</option>
+                <option value="autre">Autre</option>
+            </select>
+            
+            <textarea id="message" name="message" placeholder="Votre message *" required></textarea>
+            
+            <fieldset>
+                <legend>Niveau d’urgence *</legend>
+                <input type="radio" name="urgence" value="urgent"> Urgent
+                <input type="radio" name="urgence" value="normal"> Normal
+                <input type="radio" name="urgence" value="lent" checked> Lent
+            </fieldset>
+            
+            <input type="checkbox" name="confidentialite" required> J’ai lu et j’accepte la <a href="#">politique de confidentialité</a> du site.
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
